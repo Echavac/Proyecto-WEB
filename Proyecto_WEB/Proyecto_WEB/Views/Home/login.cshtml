@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Login</title>
+
+
+    <link href="~/pages/css/all.min.css" rel="stylesheet">
+    <link href="~/pages/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/pages/typicons.font/typicons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/pages/css/azia.css">
+
+</head>
+<body class="az-body">
+
+    @RenderBody()
+
+    <div class="az-signin-wrapper">
+        <div class="az-card-signin">
+            <h1 class="az-logo">az<span>i</span>a</h1>
+            <div class="az-signin-header">
+                <h2>Bienvennido</h2>
+                <h4>Inicie sesion para continuar</h4>
+
+                <form action="../Views/Home/Index.cshtml">
+                    <div class="form-group">
+                        <label>Correo</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su correo" value="demo@bootstrapdash.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" value="thisisademo">
+                    </div>
+                    <button class="btn btn-az-primary btn-block">Sign In</button>
+                </form>
+            </div>
+            <div class="az-signin-footer">
+                <p><a href="">Olvido su contraseña?</a></p>
+                <p>No tienes una cuenta? <a href="../Views/Home/registrar.cshtml">Crear una cuenta</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/pages/jquery/jquery.min.js"></script>
+    <script src="~/pages/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/pages/ionicons/ionicons.js"></script>
+
+    <script src="~/pages/js/azia.js"></script>
+
+</body>
+</html>
