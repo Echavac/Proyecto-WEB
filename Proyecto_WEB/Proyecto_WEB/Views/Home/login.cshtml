@@ -1,4 +1,5 @@
 ﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,6 @@
 </head>
 <body class="az-body">
 
-    @RenderBody()
 
     <div class="az-signin-wrapper">
         <div class="az-card-signin">
@@ -25,7 +25,7 @@
                 <h2>Bienvennido</h2>
                 <h4>Inicie sesion para continuar</h4>
 
-                <form action="../Views/Home/Index.cshtml">
+                <form action="@Url.Action("Index", "Home")">
                     <div class="form-group">
                         <label>Correo</label>
                         <input type="text" class="form-control" placeholder="Ingrese su correo" value="demo@bootstrapdash.com">
@@ -39,7 +39,7 @@
             </div>
             <div class="az-signin-footer">
                 <p><a href="">Olvido su contraseña?</a></p>
-                <p>No tienes una cuenta? <a href="../Views/Home/registrar.cshtml">Crear una cuenta</a></p>
+                <p>No tienes una cuenta? <a href="@Url.Action("Registrar", "Home")">Crear una cuenta</a></p>
             </div>
         </div>
     </div>
