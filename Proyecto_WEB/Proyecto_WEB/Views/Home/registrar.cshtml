@@ -1,5 +1,6 @@
 ﻿
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,6 @@
 </head>
 <body class="az-body">
 
-    @RenderBody()
 
     <div class="az-signup-wrapper">
         <div class="az-column-signup-left">
@@ -51,7 +51,7 @@
                 <h2>Get Started</h2>
                 <h4>It's free to signup and only takes a minute.</h4>
 
-                <form action="../Views/Home/login.cshtml">
+                <form action="@Url.Action("Login", "Home")">
                     <div class="form-group">
                         <label>Firstname &amp; Apellidos</label>
                         <input type="text" class="form-control" placeholder="Ingrese sus apellidos">
@@ -65,11 +65,11 @@
                         <input type="password" class="form-control" placeholder="Ingrese se contraseña">
                     </div>
                     <button class="btn btn-az-primary btn-block">Crear cuenta</button>
-                    
+
                 </form>
             </div>
             <div class="az-signup-footer">
-                <p>Ya tienes una cuenta? <a href="../Views/Home/login.cshtml">Sign In</a></p>
+                <p>Ya tienes una cuenta? <a href="@Url.Action("Login", "Home")">Sign In</a></p>
             </div>
         </div>
     </div>

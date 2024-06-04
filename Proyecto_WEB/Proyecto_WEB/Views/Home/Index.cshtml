@@ -1,8 +1,9 @@
 ﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90680653-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,23 +13,23 @@
         gtag('config', 'UA-90680653-2');
     </script>
 
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+
     <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
     <meta name="author" content="BootstrapDash">
 
     <title>FlexiGim</title>
 
-    
+
     <link href="~/pages/css/all.min.css" rel="stylesheet">
     <link href="~/pages/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="~/pages/typicons.font/typicons.css" rel="stylesheet">
     <link href="~/pages/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
 
-    
+
     <link rel="stylesheet" href="~/pages/css/azia.css">
 
 </head>
@@ -149,7 +150,7 @@
                         <a href="#" class="dropdown-item"><i class="typcn typcn-edit"></i> Editar perfil</a>
                         <a href="#" class="dropdown-item"><i class="typcn typcn-time"></i> Activity Logs</a>
                         <a href="#" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Configuracion de Cuenta</a>
-                        <a href="../Views/Home/login.cshtml" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Salir</a>
+                        <a href="@Url.Action("Login", "Home")" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Salir</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +196,7 @@
                         <a class="nav-link" data-toggle="tab" href="#">More</a>
                     </nav>
 
-                   
+
                 </div>
             </div>
         </div>
@@ -324,10 +325,10 @@
 
             $('.peity-line').peity('line');
 
-           
+
             $('.peity-bar').peity('bar');
 
-            
+
             $('.peity-donut').peity('donut');
 
             var ctx5 = document.getElementById('chartBar5').getContext('2d');
@@ -378,7 +379,7 @@
                 }
             });
 
-            
+
             var datapie = {
                 labels: ['Search', 'Email', 'Referral', 'Social', 'Other'],
                 datasets: [{
@@ -399,7 +400,7 @@
                 }
             };
 
-            
+
             var ctxpie = document.getElementById('chartDonut');
             var myPieChart6 = new Chart(ctxpie, {
                 type: 'doughnut',
@@ -411,4 +412,3 @@
     </script>
 </body>
 </html>
-
