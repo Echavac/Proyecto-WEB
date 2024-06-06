@@ -4,16 +4,16 @@ using System.Diagnostics;
 
 namespace Proyecto_WEB.Controllers
 {
-    public class HomeController : Controller
+    public class InicioController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<InicioController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public InicioController(ILogger<InicioController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Inicio()
         {
             return View();
         }

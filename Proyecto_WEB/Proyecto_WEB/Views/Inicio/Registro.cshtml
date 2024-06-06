@@ -1,7 +1,4 @@
-﻿
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -20,8 +17,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
     <meta name="author" content="BootstrapDash">
 
-    <title>Registrar</title>
-
+    <title>Registro</title>
 
     <link href="~/pages/css/all.min.css" rel="stylesheet">
     <link href="~/pages/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -35,41 +31,31 @@
 
 
     <div class="az-signup-wrapper">
-        <div class="az-column-signup-left">
-            <div>
-                <i class="typcn typcn-chart-bar-outline"></i>
-                <h1 class="az-logo">az<span>i</span>a</h1>
-                <h5>Responsive Modern Dashboard &amp; Admin Template</h5>
-                <p>We are excited to launch our new company and product Azia. After being featured in too many magazines to mention and having created an online stir, we know that BootstrapDash is going to be big. We also hope to win Startup Fictional Business of the Year this year.</p>
-                <p>Browse our site and see for yourself why you need Azia.</p>
-                <a href="#" class="btn btn-outline-indigo">Leer mas</a>
-            </div>
-        </div>
         <div class="az-column-signup">
             <h1 class="az-logo">az<span>i</span>a</h1>
             <div class="az-signup-header">
                 <h2>Get Started</h2>
                 <h4>It's free to signup and only takes a minute.</h4>
 
-                <form action="@Url.Action("Login", "Home")">
+                <form action="@Url.Action("Login", "Inicio")">
                     <div class="form-group">
-                        <label>Firstname &amp; Apellidos</label>
-                        <input type="text" class="form-control" placeholder="Ingrese sus apellidos">
+                        <label>Nombre Completo</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su Nombre Completo">
                     </div>
                     <div class="form-group">
                         <label>Correo</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su corrreo">
+                        <input type="text" class="form-control" placeholder="Ingrese su Correo">
                     </div>
                     <div class="form-group">
                         <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese se contraseña">
+                        <input type="password" class="form-control" placeholder="Ingrese su Contraseña">
                     </div>
-                    <button class="btn btn-az-primary btn-block">Crear cuenta</button>
+                    <button class="btn btn-az-primary btn-block">Crear Cuenta</button>
 
                 </form>
             </div>
             <div class="az-signup-footer">
-                <p>Ya tienes una cuenta? <a href="@Url.Action("Login", "Home")">Sign In</a></p>
+                <p>Ya tiene una cuenta? <a href="@Url.Action("Login", "Home")">Sign In</a></p>
             </div>
         </div>
     </div>
