@@ -1,4 +1,8 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Login Page";
+    Layout = "~/Views/Shared/_LayoutExterno.cshtml";
+}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,28 +21,29 @@
 </head>
 <body class="az-body">
 
+
     <div class="az-signin-wrapper">
         <div class="az-card-signin">
-            <h1 class="az-logo">az<span>i</span>a</h1>
+            <h1 class="az-logo">Flexigim</h1>
             <div class="az-signin-header">
-                <h2>Bienvenido</h2>
-                <h4>Inicie Sesión para Continuar</h4>
+                <h2>Bienvennido</h2>
+                <h4>Inicie sesion para continuar</h4>
 
-                <form action="@Url.Action("Inicio", "Inicio")">
+                <form action="@Url.Action("Index", "Home")">
                     <div class="form-group">
                         <label>Correo</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su correo" value="demo@bootstrapdash.com">
+                        <input type="text" class="form-control" placeholder="Ingrese su correo" value="">
                     </div>
                     <div class="form-group">
                         <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" value="thisisademo">
+                        <input type="password" class="form-control" placeholder="Ingrese su contraseña" value="">
                     </div>
-                    <button class="btn btn-az-primary btn-block">Sign In</button>
+                    <button class="btn btn-az-primary btn-block">Iniciar sesion</button>
                 </form>
             </div>
             <div class="az-signin-footer">
                 <p><a href="">Olvido su contraseña?</a></p>
-                <p>No tiene una cuenta? <a href="@Url.Action("Registrar", "Home")">Crear Cuenta</a></p>
+                <p>No tienes una cuenta? <a href="@Url.Action("Registrar", "Home")">Crear una cuenta</a></p>
             </div>
         </div>
     </div>
