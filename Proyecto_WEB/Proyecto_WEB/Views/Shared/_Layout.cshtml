@@ -19,29 +19,13 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Proyecto_WEB</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+         
         </nav>
 
         <div class="az-header">
             <div class="container">
                 <div class="az-header-left">
-                    <a href="Index.cshtml" class="az-logo">FlexiGim</a>
+                    <a href="Index.cshtml" class="az-logo">FlexiGym</a>
                     <a href="" id="azMenuShow" class="az-header-menu-icon d-lg-none"></a>
                 </div>
                 <div class="az-header-menu">
@@ -115,17 +99,12 @@
             <div class="container">
                 <div class="az-content-body">
                     <div class="az-dashboard-one-title">
-                        <div>
-                            <h2 class="az-dashboard-title">Hola, Bienvenido!</h2>
-                            <p class="az-dashboard-text">Tu web para que selecciones tu Gym!.</p>
-                        </div>
+                      
 
                         <div class="az-content-header-right">
                             <div class="media">
                                 <div class="media-body">
-                                    <label>Agregar</label>
-                                    <select id="categoryFilter" class="form-control">
-                                        <option value="all">Agregar Gimnacio</option>
+                                   
 
                                         <!-- Agrega más opciones según tus necesidades -->
                                     </select>
@@ -159,15 +138,13 @@
             @RenderBody()
         </main>
     </div>
-
-
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Proyecto_WEB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
     </footer>
 
+    <aside class="control-sidebar control-sidebar-dark">
+    </aside>
+    </div>
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
